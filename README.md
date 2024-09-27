@@ -6,8 +6,11 @@ Knowledge accumulated over the years
 ### Encapsulation
 ### Common Misconfigurations
 #### MTU
-`nmcli con show ens192`
-`nmcli con mod ens192 802-3-ethernet.mtu 1500`
+```
+nmcli con show ens192
+nmcli con mod ens192 802-3-ethernet.mtu 1500
+```
+
 ### Subnets
 ## Automation
 
