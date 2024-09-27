@@ -4,9 +4,9 @@ Knowledge accumulated over the years
 ## Systems
 ## Networking
 ### Encapsulation
-Layer 2 (i.e.: Ethernet)
-Layer 3 (i.e.: IP)
-Layer 4 (i.e.: TCP)
+- Layer 2 (i.e.: Ethernet)
+- Layer 3 (i.e.: IP)
+- Layer 4 (i.e.: TCP)
 
 ### Common Misconfigurations
 #### MTU
