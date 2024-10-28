@@ -22,7 +22,11 @@ Knowledge accumulated over the years
 ### Resource Usage
 #### Memory
 #### CPU
-#### Storage
+`mpstat -P ALL 2 10000 | tee <file>`
+#### I/O
+`iostat -dy -x 2 10000 | tee <file>`
+#### Network
+`sar -n DEV 2 10000`
 
 #### PAM Limits
 `ulimit -a`
