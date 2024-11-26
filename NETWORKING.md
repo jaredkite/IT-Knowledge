@@ -10,7 +10,11 @@ The TCP flags exist in the 13th octet of the TCP header.
 |C|E|U|A...
 #### Reset
 `tcpdump -nn -i ens192 "host 192.168.0.1 and tcp[tcpflags] & (tcp-rst) != 0"`
-#### Congestion Experienced - if both sides are capable of ECN. IP header flag.
+#### Congestion Experienced
+If both ends and the underlying network supports ECN. The fact that congestion happened
+is indicated in the second octet of the IP header. ECN is negotiated during the setup
+of a new connection and indicated in the SYN and SYN-ACK packets.
+
 `tcpdump -nn -i ens192 "ip[1] & 0x03 == 0x03"`
 #### ECN-Echo - Explicit Congestion Notification
 `tcpdump -nn -i ens192 "port 22 and (tcp[13] & 0xc0 != 0)"`
