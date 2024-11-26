@@ -10,8 +10,9 @@ The TCP flags exist in the 13th octet of the TCP header.
 |C|E|U|A...
 #### Reset
 `tcpdump -nn -i ens192 "host 192.168.0.1 and tcp[tcpflags] & (tcp-rst) != 0"`
+#### Congestion Experienced - if both sides are capable of ECN. IP header flag.
+`tcpdump -nn -i ens192 "ip[1] & 0x03 == 0x03"`
 #### ECN-Echo - Explicit Congestion Notification
-
 `tcpdump -nn -i ens192 "port 22 and (tcp[13] & 0xc0 != 0)"`
 
 ### Multicast
