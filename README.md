@@ -3,22 +3,36 @@ Knowledge accumulated over the years
 
 ## Systems
 ### BASH Scripting
-#### Shell Startup Modes
-```
-    ----------------------------------
-    |
-    |
- N  |
-    |
-    |
-    ----------------------------------
-    |
-    |
- Y  |
-    |
-    |
-    -----------------------------------
-```
+#### Bash Shell Startup Modes
+What scripts are executed during Bash startup and in what order? Lookup your situation in the table based on how Bash is being initialized. A regular login is typically Login=Yes and Interactive=Yes.
+
+Typical RHEL Behavior
+<table class="tg"><thead>
+  <tr>
+    <th class="tg-0lax" colspan="2" rowspan="2"></th>
+    <th class="tg-1wig" colspan="2">Interactive Shell?</th>
+  </tr>
+  <tr>
+    <th class="tg-1wig">No</th>
+    <th class="tg-1wig">Yes</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td class="tg-1wig" rowspan="2">Login Shell?</td>
+    <td class="tg-1wig">No</td>
+    <td class="tg-0lax">$BASH_ENV</td>
+    <td class="tg-0lax">~/.bashrc; source /etc/bashrc</td>
+  </tr>
+  <tr>
+    <td class="tg-1wig">Yes</td>
+    <td class="tg-0lax">/etc/profile; Then first found of: ~/.bash_profile, ~/.bash_login, or ~/.profile</td>
+    <td class="tg-0lax">/etc/profile; Then first found of: ~/.bash_profile, ~/.bash_login, or ~/.profile</td>
+  </tr>
+</tbody>
+</table>
+
+
+
 ### Resource Usage
 #### Memory
 #### CPU
