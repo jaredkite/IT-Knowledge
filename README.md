@@ -47,14 +47,25 @@ Typical RHEL Behavior
 
 #### Kernel Tuning
 
-
-## Networking
 ## [Networking](NETWORKING.md)
 ### Encapsulation
-- Layer 2 (i.e.: Ethernet)
-- Layer 3 (i.e.: IP)
-- Layer 4 (i.e.: TCP)
-
+The following diagram illustrates how data is packaged up in multiple layers of encapsulation before it is sent across a computer network.
+```
+Layer 5 - Session (i.e.: HTTPS Data)
+[ HTTP Header ][ Application Data ]
+               |
+               V
+Layer 4 - Transport (i.e.: TCP Segment)
+[ TCP Header ][[ HTTP Header ][ Application Data ]]
+               |
+               V
+Layer 3 - Network (i.e.: IP Packet):
+[ IP Header ][[ TCP Header ][[ HTTP Header ][ Application Data ]]]
+               |
+               V
+Layer 2 - Data Link (i.e.: Ethernet Frame):
+[ Layer 2 Header ][[ IP Header ][[ TCP Header ][[ HTTP Header ][ Application Data ]]]]                 
+```
 ### Common Misconfigurations
 #### MTU
 Path MTU (PMTUD) Discovery Process
