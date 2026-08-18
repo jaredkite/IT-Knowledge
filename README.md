@@ -48,10 +48,11 @@ Typical RHEL Behavior
 #### Kernel Tuning
 
 ## [NETWORKING](NETWORKING.md)
+### [Packet Capture](NETWORKING.md#packet-capture)
 ### [Data Encapsulation](NETWORKING.md#data-encapsulation)
 ### [Common Misconfigurations](NETWORKING.md#common-misconfigurations)
-### [MTU](NETWORKING.md#mtu)
-### [Troubleshooting](NETWORKING.md#troubleshooting)
+
+
 
 
 
