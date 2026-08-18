@@ -47,11 +47,11 @@ Typical RHEL Behavior
 
 #### Kernel Tuning
 
-## [Networking](NETWORKING.md)
-### [Data Encapsulation](Networking.md#data-encapsulation)
-### [Common Misconfigurations](Networking.md#common-misconfigurations)
-### [MTU](Networking.md#mtu)
-### [Troubleshooting](Networking.md#troubleshooting)
+## [NETWORKING](NETWORKING.md)
+### [Data Encapsulation](NETWORKING.md#data-encapsulation)
+### [Common Misconfigurations](NETWORKING.md#common-misconfigurations)
+### [MTU](NETWORKING.md#mtu)
+### [Troubleshooting](NETWORKING.md#troubleshooting)
 
 
 
