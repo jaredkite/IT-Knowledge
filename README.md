@@ -49,7 +49,7 @@ Typical RHEL Behavior
 
 
 ## Networking
-##[Networking](NETWORKING.md)
+## [Networking](NETWORKING.md)
 ### Encapsulation
 - Layer 2 (i.e.: Ethernet)
 - Layer 3 (i.e.: IP)
