@@ -48,40 +48,11 @@ Typical RHEL Behavior
 #### Kernel Tuning
 
 ## [Networking](NETWORKING.md)
-### [Data Encapsulation](Networking.md#Data%20Encapsulation)
-The following diagram illustrates how data is packaged up in multiple layers of encapsulation before it is sent across a computer network. When data is received by a computer on a computer network, the data is unencapsulated in the opposite order and eventually presented to the application. In this case the application could be a web browser.
-```
-Application (i.e.: web browser)
-Application Data
-               |
-               V
-Layer 5 - Session (i.e.: HTTPS Data)
-[ HTTP Header ][ Application Data ]
-               |
-               V
-Layer 4 - Transport (i.e.: TCP Segment)
-[ TCP Header ][[ HTTP Header ][ Application Data ]]
-               |
-               V
-Layer 3 - Network (i.e.: IP Packet):
-[ IP Header ][[ TCP Header ][[ HTTP Header ][ Application Data ]]]
-               |
-               V
-Layer 2 - Data Link (i.e.: Ethernet Frame):
-[ Ethernet Header ][[ IP Header ][[ TCP Header ][[ HTTP Header ][ Application Data ]]]]                 
-```
-### Common Misconfigurations
-#### MTU
-Path MTU (PMTUD) Discovery Process
+### [Data Encapsulation](Networking.md#data-encapsulation)
+### [Common Misconfigurations](Networking.md#common-misconfigurations)
+### [MTU](Networking.md#mtu)
+### [Troubleshooting](Networking.md#troubleshooting)
 
-```
-nmcli con show ens192
-nmcli con mod ens192 802-3-ethernet.mtu 1500
-```
-### Troubleshooting
-#### Connectivity
-#### Traffic
-#### Throughput
 
 
 ## Automation
