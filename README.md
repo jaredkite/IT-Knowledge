@@ -48,7 +48,7 @@ Typical RHEL Behavior
 #### Kernel Tuning
 
 ## [Networking](NETWORKING.md)
-### Encapsulation
+### [Data Encapsulation](Networking.md#Data%20Encapsulation)
 The following diagram illustrates how data is packaged up in multiple layers of encapsulation before it is sent across a computer network. When data is received by a computer on a computer network, the data is unencapsulated in the opposite order and eventually presented to the application. In this case the application could be a web browser.
 ```
 Application (i.e.: web browser)
