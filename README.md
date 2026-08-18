@@ -1,5 +1,5 @@
 # IT-Knowledge
-Knowledge accumulated over the years
+This is a work in progress. I'm collecting hard-won knowledge accumulated over the years. This is mostly intended to be a reference for myself. Hopefully there a few other people who find it useful as well.
 
 ## Systems
 ### BASH Scripting
@@ -35,11 +35,11 @@ Typical RHEL Behavior
 
 ### Resource Usage
 #### Memory
-#### CPU
+#### CPU Usage
 `mpstat -P ALL 2 10000 | tee <file>`
-#### I/O
+#### I/O Usage
 `iostat -dy -x 2 10000 | tee <file>`
-#### Network
+#### Network Utilization
 `sar -n DEV 2 10000`
 
 #### PAM Limits
@@ -49,7 +49,7 @@ Typical RHEL Behavior
 
 
 ## Networking
-[Networking](NETWORKING.md)
+##[Networking](NETWORKING.md)
 ### Encapsulation
 - Layer 2 (i.e.: Ethernet)
 - Layer 3 (i.e.: IP)
